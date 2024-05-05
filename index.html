@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Foodiee Order</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- font link -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&display=swap" rel="stylesheet"> -->
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="text-primary m-0">
+                        <!-- <img src="img/logo.png" alt="Logo" style="width:200px;height:500px;" id="imglogo"> -->
+                        <h1 style="color:#FEA116;">Foodiee</h1>
+                    </h1>
+
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="#about" class="nav-item nav-link">About</a>
+                        <a href="#menu" class="nav-item nav-link">Menu</a>
+                        <a href="#service" class="nav-item nav-link">Service</a>
+                        <!-- <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="booking.html" class="dropdown-item">Subscribe</a>
+                                <a href="team.html" class="dropdown-item">Our Team</a>
+                                <a href="testimonial.html" class="dropdown-item">Reviews</a>
+                            </div>
+                        </div> -->
+                        <a href="#contactus" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="#Reservation" class="btn btn-primary py-2 px-4">Subscribe</a>
+                </div>
+            </nav>
+
+            <!-- <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container my-5 py-5">
+                    <div class="row align-items-center g-5">
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <h1 class="display-3 text-white animated slideInLeft">Enjoy Our<br>Delicious Meal</h1>
+                            <p class="text-white animated slideInLeft mb-4 pb-2">Our carefully designed packs ensure you
+                                receive a nutritious and satisfying feast, delivered straight to your doorstep. Say
+                                goodbye to meal-prep stress and hello to a world of culinary excellence.
+
+                                Enjoy the simplicity of deliciousness at your fingertips – subscribe to Foodiee's Daily
+                                Meal Packs today and savor the joy of hassle-free, gourmet dining every day</p>
+                                <a href="#Reservation" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Subscribe</a>
+                        </div>
+                        <div class="col-lg-6 text-center text-lg-end overflow-hidden">
+                            <img class="img-fluid" src="img/hero.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                    <div class="carousel-inner">
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <div class="container my-5 py-4">
+                                <div class="row align-items-center g-5" data-bs-interval="500">
+                                    <div class="col-lg-6 text-center text-lg-start">
+                                        <h1 class="display-3 text-white animated slideInLeft fs-1">Breakfast is the fuel for champions.</h1>
+                                        <p class="text-white animated slideInLeft mb-4 pb-2">Our carefully designed packs ensure you receive a nutritious and satisfying feast, delivered straight to your doorstep. Say goodbye to Breakfast-prep stress and hello to a world of culinary excellence. Enjoy the simplicity of deliciousness at your fingertips – subscribe to Foodiee's Daily Meal Packs today and savor the joy of hassle-free, gourmet dining every day</p>
+                                        <a href="" class="btn btn-primary btn-subscribe py-sm-3 px-sm-5 me-3 animated slideInLeft">Subscribe</a>
+                                    </div>
+                                    <div class="col-lg-6 text-center text-lg-end overflow-hidden">
+                                        <img src="img/breakfast-removebg-preview.png" class="img-fluid" alt="Second Slide Image" style="width:350px;height:350px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <!-- Slide 2 -->
+                        <div class="carousel-item">
+                            <div class="container my-5 py-4">
+                                <div class="row align-items-center g-5" data-bs-interval="500">
+                                    <div class="col-lg-6 text-center text-lg-start">
+                                        <h1 class="display-3 text-white animated slideInLeft  fs-1">Enjoy Our<br>Delicious Meal</h1>
+                                        <p class="text-white animated slideInLeft mb-4 pb-2">Our carefully designed packs ensure you receive a nutritious and satisfying feast, delivered straight to your doorstep. Say goodbye to meal-prep stress and hello to a world of culinary excellence. Enjoy the simplicity of deliciousness at your fingertips – subscribe to Foodiee's Daily Meal Packs today and savor the joy of hassle-free, gourmet dining every day</p>
+                                        <a href="" class="btn btn-primary btn-subscribe py-sm-3 px-sm-5 me-3 animated slideInLeft">Subscribe</a>
+                                    </div>
+                                    <div class="col-lg-6 text-center text-lg-end overflow-hidden">
+                                        <img src="img/hero.png" class="img-fluid" alt="Hero Image" style="width:350px;height:350px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide 3 -->
+                        <div class="carousel-item">
+                            <div class="container my-5 py-4">
+                                <div class="row align-items-center g-5" data-bs-interval="500">
+                                    <div class="col-lg-6 text-center text-lg-start"> 
+                                        <h1 class="display-3 text-white animated slideInLeft  fs-1">Enjoy Our<br>Delicious Meal</h1>
+                                        <p class="text-white animated slideInLeft mb-4 pb-2">Our carefully designed packs ensure you receive a nutritious and satisfying feast, delivered straight to your doorstep. Say goodbye to meal-prep stress and hello to a world of culinary excellence. Enjoy the simplicity of deliciousness at your fingertips – subscribe to Foodiee's Daily Meal Packs today and savor the joy of hassle-free, gourmet dining every day</p>
+                                        <a href="" class="btn btn-primary btn-subscribe py-sm-3 px-sm-5 me-3 animated slideInLeft">Subscribe</a>
+                                    </div>
+                                    <div class="col-lg-6 text-center text-lg-end overflow-hidden">
+                                        <img src="img/chicken-removebg-preview.png" class="img-fluid" alt="Second Slide Image" style="width:350px;height:350px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more slides as needed -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true" style="margin-left:-140px;margin-top: 50px;"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true" style="margin-left:80px;margin-top: 50px;"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- About Start -->
+        <a name="about"></a>
+        <div class="container-xxl py-5" style="margin-top: -40px; background: linear-gradient(rgba(5, 20, 90, .92), rgba(5, 20, 90, .92))">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="row g-3">
+                            <div class="col-6 text-start mb-4">
+                                <img class="img-fluid rounded-4 w-100  wow zoomIn" data-wow-delay="0.1s" style="height:250px;"
+                                    src="img/tiffin1.jpg">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded-4 w-100 wow zoomIn" data-wow-delay="0.3s" style="height:250px;"
+                                    src="img/tiffin2.jpg">
+                            </div>
+                            <div class="col-6 text-end mb-4">
+                                <img class="img-fluid rounded-4 w-100  wow zoomIn" data-wow-delay="0.5s" style="height:250px;"
+                                    src="img/tiffin3.jpg">
+                            </div>
+                            <div class="col-6 text-end mb-4">
+                                <img class="img-fluid rounded-4 w-100  wow zoomIn" data-wow-delay="0.7s" style="height:250px;"
+                                    src="img/tiffin4.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">About Us</h5>
+                        <h1 class="mb-4 d-flex text-white">Welcome to <i class="fa fa-utensils text-primary "></i>Foodiee<img class="img-fluid rounded-4 wow zoomIn" data-wow-delay="0.7s" style="width:100px;height:100px;margin-left: 20px;margin-top:-30px;rotate:30deg;"
+                            src="img/1.png"></h1>
+                        <p class="mb-2 text-white">Foodiee: Where Taste Meets Every Palate, Every Day, Every Meal!
+                            At Foodiee, our mission is simple yet profound: to serve delectable, mouthwatering food that
+                            transcends boundaries and brings joy to every plate, every day. We believe that exceptional
+                            taste should be accessible to all, making each dining experience a moment of delight.
+                        <!-- <p class="mb-1">Our Commitment to Flavor:
+                            Step into the world of Foodiee, where flavor is not just a feature but the essence of our
+                            existence. Our culinary maestros blend passion, creativity, and expertise to craft a menu
+                            that caters to diverse tastes, ensuring there's something extraordinary for everyone. -->
+
+                            Every Day is a Feast:
+                            For us, every day is a celebration of flavors. Whether you're a fan of savory classics,
+                            exotic specialties, or health-conscious delights, Foodiee promises an array of options to
+                            suit your cravings. Revel in the joy of savoring something new and delightful with every
+                            meal.
+
+                            Accessible Culinary Bliss:
+                            We believe that delicious food should be within reach for all. With affordable pricing and
+                            convenient one-time payments, Foodiee opens the doors to a culinary journey that's not just
+                            about meals but an everyday indulgence.
+
+                            Customer Satisfaction at the Core:
+                            Our commitment goes beyond the kitchen. We are devoted to ensuring your satisfaction. The
+                            Foodiee experience is enriched by our 24/7 Coordination Hub, real-time order tracking, and a
+                            responsive feedback system, all aimed at delivering the highest standards of service.
+
+                            Join the Foodiee Family:
+                            Embark on a gastronomic adventure with Foodiee – a place where taste knows no boundaries,
+                            and every meal is an opportunity to savor life. Subscribe to Foodiee today and let your
+                            taste buds dance with joy, every day, with every delightful bite!</p>
+                        <!-- <div class="row g-4 mb-4">
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">15
+                                    </h1>
+                                    <div class="ps-4">
+                                        <p class="mb-0">Years of</p>
+                                        <h6 class="text-uppercase mb-0">Experience</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">50
+                                    </h1>
+                                    <div class="ps-4">
+                                        <p class="mb-0">Popular</p>
+                                        <h6 class="text-uppercase mb-0">Master Chefs</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+         <!-- Reservation Start -->
+         <a name="Reservation"></a>
+         <div class="container-xxl py-5 px-0 wow fadeInUp mt-2" data-wow-delay="0.1s" style=" background: linear-gradient(rgba(5, 20, 90, .92), rgba(5, 20, 90, .92))">
+            <img class="img-fluid rounded-4 wow zoomIn" data-wow-delay="0.8s" style="width:300px;height:100px;;position: relative;top:20px;left:20px;rotate:-30deg;"src="img/5.png">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s" style="margin-top: -70px;">
+                <h5 class="section-title ff-secondary text-center text-primary fw-normal">Foodiee Subscription</h5>
+                <h1 class="mb-5 text-white">Welcome To Subscription</h1>
+            </div>
+            <img class="img-fluid rounded-4 wow zoomIn" data-wow-delay="0.5s" style="width:300px;height:100px;;position: relative;top:-130px;left:75%;rotate: 30deg;"src="img/4.png">
+            <div class="row g-0">
+                <div class="col-md-6">
+                    <div class="video">
+                        <!-- <button type="button" class="btn-play" data-bs-toggle="modal"
+                            data-src="img/WhatsApp Video 2024-01-23 at 17.05.43_6459546b.mp4" data-bs-target="#videoModal">
+                            <span></span>
+                        </button> -->
+                        <video src="/img/foodvideo.mp4" autoplay muted loop="100"></video>
+                    </div>
+                </div>
+                <div class="col-md-6 bg-dark d-flex align-items-center">
+                    <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
+                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">Foodiee Subscribe</h5>
+                        <h1 class="text-white mb-4">Book your subscription today</h1>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating date" id="dob1" data-target-input="nearest">
+                                        <input type="text" class="form-control datetimepicker-input" id="dob"
+                                            placeholder="Date & Time" data-target="#dob1"
+                                            data-toggle="datetimepicker" />
+                                        <label for="dob">Date of Birth</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating date" id="date3" data-target-input="nearest">
+                                        <input type="text" class="form-control" id="datetime"
+                                            placeholder="Date & Time" data-target="#date3"/>
+                                        <label for="datetime">Mobile Number</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="select1">
+                                            <option value="1">Monthly Foodiees</option>
+                                            <option value="2">Weekly Foodiees</option>
+                                            <option value="3">Daily Foodiees</option>
+                                        </select>
+                                        <label for="select1">Select Subscription</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="select1">
+                                            <option value="1">Gachibowli</option>
+                                            <option value="2">KPHB</option>
+                                            <option value="3">Madhapur</option>
+                                        </select>
+                                        <label for="select1">Select nearby delivery points</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Special Request" id="message"
+                                            style="height: 100px"></textarea>
+                                        <label for="message">Address</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Buy Subscription</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- 16:9 aspect ratio -->
+                        <div class="ratio ratio-16x9">
+                            <iframe class="embed-responsive-item" src="" id="video" allowfullscreen
+                                allowscriptaccess="always" allow="autoplay"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Reservation End -->
+
+        <!-- Menu Start -->
+        <a name="menu"></a>
+        <div class="container-xxl py-5 mt-2" style=" background: linear-gradient(rgba(5, 20, 90, .92), rgba(5, 20, 90, .92))">
+            <div class="container" style="margin-top:-100px;">
+                <img class="img-fluid rounded-4 wow zoomIn" data-wow-delay="0.5s" style="width:300px;height:100px;;position: relative;top:90px;"src="img/2.png">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Food Menu</h5>
+                    <h1 class="mb-5 text-white">All available Items</h1>
+                </div>
+                <img class="img-fluid rounded-4 wow zoomIn" data-wow-delay="0.5s" style="width:300px;height:100px;;position: relative;top:-130px;left:75%;"src="img/3.png">
+                <div class="tab-class text-center wow fadeInUp text-white" data-wow-delay="0.1s" style="margin-top: -80px;">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill"
+                                href="#tab-1">
+                                <i class="fa fa-coffee fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-primary">Popular</small>
+                                    <h6 class="mt-n1 mb-0 text-white">Breakfast at 100 Foodiees</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill"
+                                href="#tab-2">
+                                <i class="fa fa-hamburger fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-primary">Special</small>
+                                    <h6 class="mt-n1 mb-0 text-white">Launch at 100 Foodiees</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill"
+                                href="#tab-3">
+                                <i class="fa fa-utensils fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-primary">Lovely</small>
+                                    <h6 class="mt-n1 mb-0 text-white">Dinner at 100 Foodiees</h6>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/masala.jpg" alt=""
+                                            style="width: 80px;height:80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 text-primary">
+                                                <span>Masala Dosa (Vegetarian) </span>
+                                                <span class="text-primary">25Fs</span>
+                                            </h5>
+                                            <small class="fst-italic">Crispy dosa with spiced potato filling. Served
+                                                with coconut chutney and sambar.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/pesaruattu.jpg" alt=""
+                                            style="width: 80px;height:80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 text-primary">
+                                                <span>Pesarattu (Andhra Moong Dal Dosa) with Allam Pachadi (Vegetarian)
+                                                </span>
+                                                <span class="text-primary">35Fs</span>
+                                            </h5>
+                                            <small class="fst-italic">Green gram dal-based dosa served with a tangy
+                                                ginger chutney.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/fruithoney.jpg" alt=""
+                                            style="width: 80px;height:80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 text-primary">
+                                                <span>Fruit Bowl with Honey (Vegetarian)</span>
+                                                <span class="text-primary">15Fs</span>
+                                            </h5>
+                                            <small class="fst-italic">Assorted seasonal fruits drizzled with
+                                                honey.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/alooparatu.jpg" alt=""
+                                            style="width: 80px;height:80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 text-primary">
+                                                <span>Aloo Paratha with Curd (Vegetarian) </span>
+                                                <span class="text-primary">25Fs</span>
+                                            </h5>
+                                            <small class="fst-italic">Whole wheat flatbread stuffed with spiced mashed
+                                                potatoes. Served with curd.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/uttapam.jpg" alt=""
+                                            style="width: 80px;height:80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 text-primary">
+                                                <span>Uttapam with Coconut Chutney (Vegetarian)</span>
+                                                <span class="text-primary">20Fs</span>
+                                            </h5>
+                                            <small class="fst-italic">Thick rice pancake topped with vegetables. Served
+                                                with coconut chutney.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/vada.jpg" alt=""
+                                            style="width: 80px;height:80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 text-primary">
+                                                <span>Vada with Coconut Chutney and Sambar (Vegetarian)</span>
+                                                <span class="text-primary">15Fs</span>
+                                            </h5>
+                                            <small class="fst-italic">Deep-fried lentil doughnuts. Served with coconut
+                                                chutney and sambar.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/idly.jpg" alt=""
+                                            style="width: 80px;height:80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 text-primary">
+                                                <span>Idli with Andhra Peanut Chutney (Vegetarian) </span>
+                                                <span class="text-primary">20Fs</span>
+                                            </h5>
+                                            <small class="fst-italic">Steamed rice cakes served with a spicy peanut
+                                                chutney</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/bonda.jpg" alt=""
+                                            style="width: 80px;height:80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 text-primary">
+                                                <span>Mysore Bajji (Vegetarian) </span>
+                                                <span class="text-primary">20Fs</span>
+                                            </h5>
+                                            <small class="fst-italic">Spiced and crispy deep-fried lentil fritters from
+                                                Mysore. Served with coconut chutney.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/chicken.jpg" alt=""
+                                            style="width: 80px;height:80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 text-primary">
+                                                <span>Chicken Curry with Rice (Non-Vegetarian)</span>
+                                                <span class="text-primary">35Fs</span>
+                                            </h5>
+                                            <small class="fst-italic">Tender chicken pieces cooked in a flavorful curry.
+                                                Served with steamed rice.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/channaroti.jpg" alt=""
+                                            style="width: 80px;height:80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 text-primary">
+                                                <span>Chana Masala with Roti (Vegetarian)</span>
+                                                <span class="text-primary">25Fs</span>
+                                            </h5>
+                                            <small class="fst-italic">Chickpeas cooked in a spiced tomato-based gravy.
+                                                Served with roti.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/dalfry.jpg" alt=""
+                                            style="width: 80px;height:80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 text-primary">
+                                                <span>Dal Fry with Jeera Rice (Vegetarian)</span>
+                                                <span class="text-primary">20Fs</span>
+                                            </h5>
+                                            <small class="fst-italic">Lentils cooked with spices. Served with fragrant
+                                                cumin rice.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/vegpalou.jpg" alt=""
+                                            style="width: 80px;height:80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 text-primary">
+                                                <span>Vegetable Pulao (Vegetarian)</span>
+                                                <span class="text-primary">25Fs</span>
+                                            </h5>
+                                            <small class="fst-italic">Fragrant rice cooked with mixed vegetables and
+                                                spices.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/fish.jpg" alt=""
+                                            style="width: 80px;height:80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 text-primary">
+                                                <span>Fish Curry with Steamed Rice (Non-Vegetarian)</span>
+                                                <span class="text-primary">30Fs</span>
+                                            </h5>
+                                            <small class="fst-italic">Fish cooked in a tangy and spicy curry. Served
+                                                with steamed rice.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/panniru.jpg" alt=""
+                                            style="width: 80px;height:80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 text-primary">
+                                                <span>Paneer Butter Masala with Naan (Vegetarian)</span>
+                                                <span class="text-primary">30Fs</span>
+                                            </h5>
+                                            <small class="fst-italic">Paneer cubes in a rich tomato and cream-based
+                                                gravy. Served with naan.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/vegbiryani.jpg" alt=""
+                                            style="width: 80px;height:80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 text-primary">
+                                                <span>Vegetable Biryani (Vegetarian)</span>
+                                                <span class="text-primary">20Fs</span>
+                                            </h5>
+                                            <small class="fst-italic">Fragrant basmati rice cooked with mixed vegetables
+                                                and aromatic spices.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/roti.jpg" alt=""
+                                            style="width: 80px;height:80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 text-primary">
+                                                <span>Roti with Aloo Gobi (Vegetarian)</span>
+                                                <span class="text-primary">25Fs</span>
+                                            </h5>
+                                            <small class="fst-italic">Whole wheat flatbread served with spiced
+                                                cauliflower and potato curry.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/palakchicken.jpg" alt=""
+                                            style="width: 80px;height:80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 text-primary">
+                                                <span>Palak Chicken with Steamed Rice (Non-Vegetarian)</span>
+                                                <span class="text-primary">35Fs</span>
+                                            </h5>
+                                            <small class="fst-italic">Chicken cooked in a vibrant spinach and
+                                                tomato-based gravy.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/bhindiroti.jpg" alt=""
+                                            style="width: 80px;height:80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 text-primary">
+                                                <span>Bhindi Masala with Roti (Vegetarian)</span>
+                                                <span class="text-primary">25Fs</span>
+                                            </h5>
+                                            <small class="fst-italic">Okra cooked with onions, tomatoes, and spices.
+                                                Served with roti.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/sambarrice.jpg" alt=""
+                                            style="width: 80px;height:80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 text-primary">
+                                                <span>Tamarind Rasam with Rice (Vegetarian)</span>
+                                                <span class="text-primary">15Fs</span>
+                                            </h5>
+                                            <small class="fst-italic">Tangy South Indian soup made with tamarind,
+                                                tomatoes, and spices. Served with rice.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/musrums.jpg" alt=""
+                                            style="width: 80px;height:80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 text-primary">
+                                                <span>Kadai Mushroom with Jeera Rice (Vegetarian)</span>
+                                                <span class="text-primary">30Fs</span>
+                                            </h5>
+                                            <small class="fst-italic">Mushrooms and bell peppers cooked in a spiced
+                                                tomato-based gravy. Served with fragrant cumin rice.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/fishcurryrice.jpg" alt=""
+                                            style="width: 80px;height:80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 text-primary">
+                                                <span>Goan Fish Curry with Steamed Rice (Non-Vegetarian)</span>
+                                                <span class="text-primary">35Fs</span>
+                                            </h5>
+                                            <small class="fst-italic">Fish curry with coconut milk, tamarind, and
+                                                aromatic spices. Served with steamed rice.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/chapathi.jpg" alt=""
+                                            style="width: 80px;height:80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 text-primary">
+                                                <span>Cabbage Sabzi with Chapati (Vegetarian) </span>
+                                                <span class="text-primary">20Fs</span>
+                                            </h5>
+                                            <small class="fst-italic">Shredded cabbage cooked with spices. Served with
+                                                chapati.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/hydbiryani.jpg" alt=""
+                                            style="width: 80px;height:80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 text-primary">
+                                                <span>Hyderabadi Chicken Biryani (Non-Vegetarian)</span>
+                                                <span class="text-primary">40Fs</span>
+                                            </h5>
+                                            <small class="fst-italic">Fragrant basmati rice layered with marinated
+                                                chicken and aromatic spices.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-3" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/mutton.jpg" alt=""
+                                            style="width: 80px;height:80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 text-primary">
+                                                <span>Mutton Rogan Josh with Jeera Rice (Non-Vegetarian)</span>
+                                                <span class="text-primary">35Fs</span>
+                                            </h5>
+                                            <small class="fst-italic">Tender mutton pieces in a rich and aromatic curry.
+                                                Served with fragrant cumin rice.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/dosa.jpg" alt=""
+                                            style="width: 80px;height:80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 text-primary">
+                                                <span>Vegetable Sambar with Dosa (Vegetarian)</span>
+                                                <span class="text-primary">25Fs</span>
+                                            </h5>
+                                            <small class="fst-italic">Lentil-based vegetable stew. Served with crispy
+                                                dosa.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/hydbiryani.jpg" alt=""
+                                            style="width: 80px;height:80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 text-primary">
+                                                <span>Chicken Biryani (Non-Vegetarian)</span>
+                                                <span class="text-primary">30Fs</span>
+                                            </h5>
+                                            <small class="fst-italic">Fragrant basmati rice cooked with chicken and
+                                                aromatic spices.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/alooparatu.jpg" alt=""
+                                            style="width: 80px;height:80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 text-primary">
+                                                <span>Aloo Methi with Chapati (Vegetarian)</span>
+                                                <span class="text-primary">20Fs</span>
+                                            </h5>
+                                            <small class="fst-italic">Fenugreek leaves and potatoes cooked with spices.
+                                                Served with chapati.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/butterchicken.jpg" alt=""
+                                            style="width: 80px;height:80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 text-primary">
+                                                <span>Butter Chicken with Naan (Non-Vegetarian)</span>
+                                                <span class="text-primary">30Fs</span>
+                                            </h5>
+                                            <small class="fst-italic">Succulent chicken pieces in a creamy tomato-based
+                                                curry. Served with naan.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/pulihoro.jpg" alt=""
+                                            style="width: 80px;height:80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 text-primary">
+                                                <span>Lemon Rice with Pappadum (Vegetarian)</span>
+                                                <span class="text-primary">15Fs</span>
+                                            </h5>
+                                            <small class="fst-italic">Fragrant lemon-flavored rice. Served with crispy
+                                                pappadums.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/mixedveg.jpg" alt=""
+                                            style="width: 80px;height:80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 text-primary">
+                                                <span>Mixed Vegetable Curry with Roti (Vegetarian)</span>
+                                                <span class="text-primary">25Fs</span>
+                                            </h5>
+                                            <small class="fst-italic">Assorted vegetables cooked in a spiced curry.
+                                                Served with roti.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/steamedrice.jpg" alt=""
+                                            style="width: 80px;height:80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 text-primary">
+                                                <span>Dal Makhani with Steamed Rice (Vegetarian)</span>
+                                                <span class="text-primary">20Fs</span>
+                                            </h5>
+                                            <small class="fst-italic">Creamy black lentils. Served with steamed
+                                                rice.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menu End -->
+        <!--Service Start -->
+        <a name="service"></a>
+        <div class="container-xxl py-5 mt-2" style=" background: linear-gradient(rgba(5, 20, 90, .92), rgba(5, 20, 90, .92))">
+            <div class="container text-white">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Services</h5>
+                    <h1 class="mb-5 text-white">All Services Details</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s" style="box-shadow: 1px 1px 10px white;">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
+                                <h5 class="text-white">Masters from Godavari Food!</h5>
+                                <p>Discover the Heart and Soul of Godavari Cuisine: Foodiee's Divine Meals with Love and
+                                    Respect.
+
+                                    At Foodiee, we bring you the best meals prepared by the warm and hospitable people
+                                    of Godavari, where each dish is a testament to the rich culinary heritage and a
+                                    symbol of respect and love. Our chefs pour their passion into every preparation,
+                                    ensuring that each bite is a celebration of flavors that reflect the region's
+                                    authenticity.
+
+                                    Experience the essence of Godavari in every dish – from soulful biryanis to
+                                    delectable desserts, our menu is a journey through the traditions and hospitality of
+                                    this vibrant culture. With Foodiee, it's not just a meal; it's a heartfelt offering
+                                    crafted with love.
+
+                                    Subscribe to Foodiee today and let the essence of Godavari cuisine fill your plate
+                                    with the warmth of respect, tradition, and the joy of sharing exceptional food.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s" style="box-shadow: 1px 1px 10px white;">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-utensils text-primary mb-4"></i>
+                                <h5 class="text-white">Quality Beyond Taste: Unveiling the Culinary Excellence of Foodiee</h5>
+                                <p>At Foodiee, we take pride in delivering a dining experience that transcends mere
+                                    taste. Our commitment to quality extends beyond flavors, encompassing every aspect
+                                    of the culinary journey. Here's what sets our food apart:
+
+                                    Premium Ingredients: We source only the finest and freshest ingredients to ensure
+                                    that each dish is a masterpiece of taste and nutrition.
+
+                                    Expert Craftsmanship: Our chefs, inspired by culinary passion and expertise,
+                                    meticulously craft each recipe to perfection. Every dish tells a story of skillful
+                                    artistry and dedication.
+
+                                    Hygiene and Safety: Your well-being is our top priority. Our kitchens adhere to the
+                                    highest hygiene and safety standards, guaranteeing that every meal is prepared in a
+                                    clean and controlled environment.
+
+                                    Diverse Culinary Influences: Foodiee celebrates diversity in flavors. <!--Our menu is a
+                                    fusion of culinary influences, offering a wide range of options to satisfy every
+                                    palate.
+
+                                    Customer Feedback: We value your feedback and continuously strive to enhance our
+                                    offerings. Your satisfaction is our measure of success, and we're committed to
+                                    consistently exceeding your expectations.--></p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s" style="box-shadow: 1px 1px 10px white;">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-cart-plus text-primary mb-4"></i>
+                                <h5 class="text-white">Seamless Dining, Endless Rewards: Foodiee's Online Orders with Points System</h5>
+                                <p>Embark on a hassle-free culinary journey with Foodiee, where every online order is a
+                                    delightful experience. Here's how our innovative system works:
+
+                                    One-Time Payment Convenience: Enjoy the simplicity of one-time payments for your
+                                    online orders. Place your order and experience the ease of secure transactions
+                                    without any recurring charges.
+
+                                    Earn and Redeem Points: Every purchase with Foodiee earns you valuable points.
+                                    Accumulate these points and unlock the key to a month-long culinary adventure.
+
+                                    Daily Meals Subscription: Utilize your accumulated points to subscribe to our
+                                    exclusive 30-day Daily Meals plan. Say goodbye to the stress of daily meal planning
+                                    and let Foodiee curate a diverse menu of flavorful dishes for you.
+
+                                    <!-- Variety in Every Bite: Our Daily Meals subscription offers a daily rotation of
+                                    delectable dishes, ensuring that each day brings a new and exciting culinary
+                                    experience to your table. -->
+
+                                    <!-- Flexible and Rewarding: Choose from our range of mouthwatering options and savor the
+                                    convenience of daily meals tailored to your preferences. Foodiee makes dining a
+                                    joyous journey, combining flexibility with irresistible rewards.
+
+                                    Experience the future of dining with Foodiee – where online orders, one-time
+                                    payments, and a points system converge to bring you a month of deliciousness,
+                                    effortlessly delivered to your door--></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s" style="box-shadow: 1px 1px 10px white;">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-headset text-primary mb-4"></i>
+                                <h5 class="text-white">Unmatched Convenience, Uninterrupted Service: Foodiee's 24/7 Coordination Hub</h5>
+                                <p>At Foodiee, we believe in delivering not just meals but an unparalleled experience.
+                                    Our 24/7 Coordination Hub is dedicated to ensuring seamless service, customer
+                                    satisfaction, and on-time delivery. Here's how we keep you connected:
+
+                                    Real-time Order Tracking: Stay informed with our cutting-edge order tracking system.
+                                    Follow your food's journey from the kitchen to your doorstep in real-time,
+                                    guaranteeing transparency and peace of mind.
+
+                                    Customer Feedback Hub: We value your opinions. Our Customer Feedback Hub operates
+                                    around the clock to receive, analyze, and respond to your feedback promptly. Your
+                                    insights shape our service, ensuring continuous improvement.
+
+                                    Instant Issue Resolution: Any concerns or issues are swiftly addressed by our
+                                    dedicated support team.<!-- Reach out at any time, day or night, and experience the
+                                    efficiency of our instant issue resolution system. -->
+
+                                    <!-- Timely Notifications: Receive timely updates on your order status, promotions, and
+                                    exclusive offers through our notification system. We keep you in the loop, ensuring
+                                    you never miss a moment of our exceptional service.
+
+                                    Efficient Order Management: Our 24/7 Coordination Hub is equipped with advanced
+                                    tools for precise order management. We prioritize on-time deliveries, making sure
+                                    your meals arrive fresh and flavorful whenever you need them.
+
+                                    Choose Foodiee for an experience that goes beyond mere food delivery – it's a
+                                    commitment to 24/7 excellence, coordination, and customer satisfaction. Enjoy the
+                                    freedom to savor quality meals with peace of mind, any time of the day or night. -->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End-->
+
+
+        
+
+
+        
+
+
+       
+
+
+        <!-- Testimonial Start -->
+        <!-- <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="text-center">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Reviews</h5>
+                    <h1 class="mb-5">Our Clients Say!!!</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>"Foodiee has revolutionized my meal routine! The subscription model is incredibly convenient,
+                            and the variety of dishes available is impressive. The points system adds a fun and
+                            rewarding touch to the whole experience. Plus, the 24/7 service ensures I can always satisfy
+                            my cravings. Highly recommended!"</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg"
+                                style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Client Name</h5>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>"I love using Foodiee! The app is user-friendly, and the subscription plans make it easy to
+                            enjoy delicious meals without the hassle of daily ordering. The points system is a great way
+                            to save and earn rewards. The quality of food and timely delivery have exceeded my
+                            expectations. Thumbs up!"</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg"
+                                style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Client Name</h5>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>"Foodiee is a game-changer! The subscription options fit perfectly with my busy schedule. The
+                            daily, weekly, and monthly plans provide flexibility, and the point system is a brilliant
+                            way to keep customers engaged. The app's interface is sleek, making it a pleasure to use. I
+                            look forward to my meals every day!"</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg"
+                                style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Client Name</h5>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>"I'm so impressed with Foodiee! The app makes it simple to order meals with just a few taps.
+                            The subscription plans are affordable, and the point system adds a delightful touch. The
+                            customer service is top-notch, addressing any queries promptly. I've recommended Foodiee to
+                            all my friends!"</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-4.jpg"
+                                style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Client Name</h5>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Testimonial End -->
+
+         <!-- Contact Start -->
+         <a name="contactus"></a>
+         <div class="container-xxl py-5 mt-2" style=" background: linear-gradient(rgba(5, 20, 90, .92), rgba(5, 20, 90, .92))">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Contact Us</h5>
+                    <h1 class="mb-5 text-white">Contact For Any Query</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-12">
+                        <div class="row gy-4">
+                            <div class="col-md-4">
+                                <h5 class="section-title ff-secondary fw-normal text-start text-primary">Booking</h5>
+                                <p class="text-white"><i class="fa fa-envelope-open text-primary me-2"></i>book@example.com</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 class="section-title ff-secondary fw-normal text-start text-primary">General</h5>
+                                <p  class="text-white"><i class="fa fa-envelope-open text-primary me-2"></i>info@example.com</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 class="section-title ff-secondary fw-normal text-start text-primary">Technical</h5>
+                                <p  class="text-white"><i class="fa fa-envelope-open text-primary me-2"></i>tech@example.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
+                        <iframe class="position-relative rounded w-100 h-100"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+                            frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false"
+                            tabindex="0"></iframe>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="wow fadeInUp" data-wow-delay="0.2s">
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                            <label for="name">Your Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                            <label for="email">Your Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                            <label for="subject">Subject</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                            <label for="message">Message</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light footer pt-5 mt-2 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5" >
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
+                        <a class="btn btn-link" href="">About Us</a>
+                        <a class="btn btn-link" href="">Contact Us</a>
+                        <a class="btn btn-link" href="">Suscription</a>
+                        <a class="btn btn-link" href="">Privacy Policy</a>
+                        <a class="btn btn-link" href="">Terms & Condition</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>MIG-55, Vstarx- IT Hub, 4th Floor,
+                            Green Hills Road, KPHB-15, Hyderabad, Telangana.</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 888 999 5878</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@foodieeorder.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Newsletter</h4>
+                        <p>Please do follow our latest updates about</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text"
+                                placeholder="Your email">
+                            <button type="button"
+                                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Follow Us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">www.foodieeorder.com</a>, All Right Reserved.
+
+                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                            Designed By <a class="border-bottom" href="https://mountstring.com">Mount String
+                                Technologies Pvt. Ltd.</a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
